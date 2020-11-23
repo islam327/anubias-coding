@@ -1,0 +1,249 @@
+/* start global rules*/
+img {
+    max-width: 100%;
+}
+i {
+    font-size: 50px;
+    margin: 10px;
+}
+.logo {
+    position: absolute;
+overflow: hidden;
+position: absolute;
+}
+body {
+    background-image: url(bgimage.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Sansita Swashed', cursive;
+}
+.header {
+    background-color: rgba(15, 15, 10,0.9);
+    overflow: hidden;
+}
+.topnav {
+    overflow: hidden;
+    
+}
+.topnav a {
+    float: right;
+    display: block;
+    color: #f5f5f0;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.topnav a:hover {
+  background-color: rgba(15, 15, 10,0.5);
+  color: #ffff00;
+}
+.topnav a.active {
+    background-color: rgba(15, 15, 10,0.5);
+    color: #ffff00;
+}
+.topnav .icon {
+    display: none;
+}
+.half {
+    color: red;
+}
+.wbanner {
+    color: white;
+    font-size: xx-large;
+    font-family: 'Abril Fatface', cursive;
+    padding-top: 60px;
+    margin-top: 50px;
+    margin-bottom: 400px;
+}
+.feauters {
+    background-color: #0f0f0a;
+    border: 3px solid #ffff00;
+    width: 100%;
+    float: right;
+    color: #ffff00;
+}
+.boxes {
+    width: calc(100%/3.7);
+    border: 15px dotted #ffff00;
+    float: right;
+    margin: 1%;
+    color: #ffff00;
+    height: 200px;
+    padding: 1%;
+}
+.about {
+    background-color: rgba(255, 255, 255,0.1);
+    text-align: center;
+    border: 5px solid #ffff00;
+}
+.footer {
+    height: auto;
+    background-color: #0f0f0a;
+    border: 1px solid #ffff00;
+    color: #f5f5f0;
+}
+.copy {text-align:left;
+padding-bottom: 3px;}
+.contact {text-align: center;}
+.footer a{color: #f5f5f0;}
+  
+/*end global ruels*/
+/*start tools*/
+.hidden-xs {
+    display: none;
+}
+.hidden-sm {
+    display: none;
+}
+.hidden-md {
+    display: none;
+}
+.hidden-lg {
+    display: none;
+}
+.textcenter {
+    text-align: center;
+}
+.float-l {
+    float: left;
+}
+.float-r {
+    float: right;
+}
+.clear-fix {
+    float: none;
+}
+.responsive-img {
+    max-width: 100%;
+}
+.center-block {
+    display:block;
+    margin-right:auto;
+    margin-left:auto;
+}
+.container {
+    width: 100%;
+}
+/*end tools*/
+/*start framework*/
+@media(max-width:767px){             /*Portrait phones and smaller xs*/
+    .hidden-xs {
+        display: block;
+    }
+    h1 {font-size:26px}
+    .logo {
+        width: 100px; 
+        height: auto;
+    }
+    .topnav {
+        margin-top: 16%;
+    }
+    .topnav a {display: none;
+        font-size: 50px;
+    }
+
+    .topnav a.icon {
+      float: right;
+      display: block;}
+  
+      .topnav.responsive {position: relative;}
+  
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;}
+  
+      .topnav.responsive a {
+          float: none;
+          display: block;
+          text-align: left;
+        }
+      .wbanner {font-size: medium;}
+
+      .boxes {
+          width: 90%;
+         font-size: 40px;
+         height: auto;
+         margin-bottom: 50px;
+         border: 10px dotted #ffff00;
+        }
+        .f1 {font-size: 40px;}
+        .about{font-size: 40px;}
+}
+@media(min-width:768px) and (max-width:991px){              /*Portrait tablets and small desktops sm*/
+    .hidden-sm {
+        display: block;
+    }
+    h1 {font-size:28px}
+    .logo {
+        width: 100px; 
+        height: max-content;
+    }
+    
+    .topnav a {display: none;
+    font-size: 50px;
+    }
+
+  .topnav a.icon {
+    float: right;
+    display: block;}
+
+    .topnav.responsive {position: relative;}
+
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;}
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .boxes {
+     width: 90%;
+     font-size: 70px;
+     height: auto;
+     margin-bottom: 60px;
+    }
+    .wbanner {font-size: 60px;}
+    i {
+        font-size: 100px;
+        margin: 50px;
+    }
+    .f1 {font-size: 75px;}
+    .about{font-size: 75px;}
+
+}
+@media(min-width:992px){               /* Landscape tablets and medium desktops md*/
+    .hidden-md {
+        display: block;
+    }
+    h1 {font-size:32px}
+    .logo {
+        width: 80px; 
+        height: auto;
+    }
+    .topnav {
+        margin-top: 7%;
+    }
+    .boxes {width: calc(100%/3.8);}
+    .about {
+        border-radius: 50%;
+    padding: 20px;
+    }
+}
+@media(min-width:1200px){               /* Large desktops and laptops lg*/
+    .hidden-lg {
+        display: block;
+    }
+    h1 {font-size:34px}
+    .logo {
+        width: 100px;
+        height: auto;
+    }
+}
+/*end framework*/
